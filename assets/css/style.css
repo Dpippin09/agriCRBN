@@ -13,6 +13,7 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    background-color: #cf5d1b;
 }
 
 header h1 {
@@ -29,10 +30,10 @@ header nav a {
 }
 
 header nav a:hover {
-    color: black;
+    color: rgb(241, 10, 10);
 }
 
-a {
+a { color: #0232cf;
     text-decoration: none;
 }
 
@@ -40,6 +41,8 @@ a {
    image-rendering: auto;
     height: 300px;
     width: 2000px;
+    padding-bottom: 0%;
+    border: #0232cf;
 }
 
 main {
@@ -58,6 +61,36 @@ font-size: 40px;
     font-size: 30px;
 }
 
+#about-me {
+    margin-top: auto;
+    background-color: rgb(11, 102, 155);
+    padding-bottom: 0%;
+}
+
+#work {
+    
+}
+
+
+#contact {
+    background-color: #1b6699;
+
+}
+
+#contact a {
+    color: #cf5d1b;
+}
+
+h3 {
+    color: #0f4a61;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h3:hover {
+    color: rgb(136, 19, 19);
+    
+}
 
 
 /* 
