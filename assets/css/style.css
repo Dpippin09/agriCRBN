@@ -88,8 +88,13 @@ h3 {
 }
 
 h3:hover {
-    color: rgb(136, 19, 19);
+    color: rgb(236, 11, 11);
     
+}
+
+#contact nav ul {
+    display: block;
+
 }
 
 
