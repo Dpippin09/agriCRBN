@@ -15,18 +15,20 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #007200;
+    top: 0;
+    left: 0;
+    background-color: #fefae0; /* Optional: Set a background color */
+    z-index: 1000; /* Ensure the header stays above other content */
 }
 
-header h1 {
-    font-size: 55px;
-}
 
 #hero {
-    background-color: #007200;
+    
     color: #ffffff;
     text-align: center;
     padding: 30px 0;
+    position: relative;
+    object-position: center;
 }
 
 .off-screen-menu {
@@ -58,28 +60,48 @@ nav {
 .ham-menu {
     height: 50px;
     width: 50px;
+    position: fixed;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    cursor: pointer;
+}
+
+/* .ham-menu {
+    height: 50px;
+    width: 50px;
     margin-left: auto;
     position: relative;
-}
+} */
 
 .ham-menu span {
     height: 5px;
     width: 100%;
-    background-color: aquamarine;
+    background-color: rgb(40, 87, 38);
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s ease;
+}
+
+/* .ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: rgb(40, 87, 38);
     border-radius: 25px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: .3s ease;
-}
+} */
 
 .ham-menu span:nth-child(1) {
     top: 25%;
 }
 
 .ham-menu span:nth-child(3) {
-    top: 75%;
+    top: 55%;
 }
 
 .ham-menu.active span:nth-child(1) {
@@ -96,28 +118,6 @@ nav {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-
-
-/* header nav {
-    display: flex;
-}
-
-header nav a {
-    margin-right: 20px;
-    font-size: 20px;
-}
-
-header nav a:hover {
-    color: rgb(0, 0, 0);
-}
-
-
-nav a.login-signup {
-    outline: 2px solid #ffffff; 
-    padding: 5px; 
-    border-radius: 5px; 
-} */
-
 a { color: #ffffff;
     text-decoration: none;
 }
@@ -127,11 +127,12 @@ a { color: #ffffff;
 
 .hero img{
    image-rendering: auto;
-    height: 580px;
-    width: 100%;
+   size: 5px;
     padding-bottom: 0%;
-    border: #0b5011;
-    
+    padding-left: 35%;
+    /* border: #0b5011; */
+    margin: auto;
+    position: relative;
 }
 
 .hero {
